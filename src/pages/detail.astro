@@ -1,0 +1,34 @@
+---
+import Layout from "../layouts/Layout.astro";
+import MainHeader from "../blocks/MainHeader.astro";
+import Hero from "../blocks/Hero.astro";
+import ImageTextColumn from "../blocks/ImageTextColumn.astro";
+import Footer from "../blocks/Footer.astro";
+import BgBubble from "../components/BgBubble.astro";
+import PageHeader from "../blocks/PageHeader.astro";
+import Cards from "../blocks/Cards.astro";
+---
+
+<Layout title="Huis van het Nederlands">
+	<MainHeader />
+	<main>
+		<PageHeader />
+		<section class="overflow-hidden">
+			<div class="wrapper relative">
+				<BgBubble position="right-[65%] -top-[85%]" />
+				<ImageTextColumn
+					title="Nederlands leren"
+					description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+					img="/images/img-1.webp"
+					primaryLinkUrl="/"
+					primaryLinkLabel="Maak afspraak"
+					secondaryLinkUrl="/"
+					secondaryLinkLabel="Vrij langskomen"
+				/>
+				<BgBubble position="left-[75%] -bottom-[125%]" />
+				<Cards />
+			</div>
+		</section>
+	</main>
+	<Footer />
+</Layout>

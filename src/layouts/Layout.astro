@@ -1,0 +1,75 @@
+---
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="nl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Astro description" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body class="">
+		<slot />
+	</body>
+</html>
+
+<style is:global>
+	.wrapper {
+		max-width: 100rem;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+
+	.wrapper.section-spacing {
+		margin-top: 15rem;
+		margin-bottom: 15rem;
+	}
+
+	.speak-bubble {
+		width: 70rem;
+		height: 30rem;
+		padding: 0 10rem;
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+
+		mask-image: url(/svg/speak-bubble.svg);
+		mask-size: 100%;
+		mask-repeat: no-repeat;
+		mask-position: center;
+	}
+
+	p {
+		font-weight: 300;
+	}
+
+	li {
+		list-style: none;
+	}
+
+	@font-face {
+		font-family: "Corbel";
+		src:
+			url("/fonts/Corbel Light.woff2") format("woff2"),
+			url("/fonts/Corbel Light.woff") format("woff");
+		font-weight: 300;
+	}
+
+	@font-face {
+		font-family: "Corbel";
+		src:
+			url("/fonts/Corbel.woff2") format("woff2"),
+			url("/fonts/Corbel.woff") format("woff");
+		font-weight: 400;
+	}
+</style>

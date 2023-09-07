@@ -1,0 +1,15 @@
+---
+export interface Props {
+	label: string | undefined;
+	href: string | undefined;
+	type: "primary" | "secondary";
+}
+
+const { label, href, type } = Astro.props;
+---
+
+<a
+	href={href}
+	class=` px-7 py-3 rounded-full text-xl ${type === "primary" ? "bg-primary text-white" : "border-[1px] border-slate-400 font-thin"}`>
+	{label}
+</a>

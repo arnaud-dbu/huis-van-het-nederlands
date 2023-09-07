@@ -1,0 +1,71 @@
+---
+import Link from "../components/Link.astro";
+---
+
+<header class="absolute w-full z-10">
+	<div class="">
+		<div class="wrapper relative">
+			<div
+				class="absolute right-0 flex bg-white w-fit font-thin px-20 py-2 shadow-sm mx-6 gap-24 rounded-bl-full rounded-br-full">
+				<nav>
+					<ul class="flex gap-8 items-center">
+						<li><a href="">Zaal huren</a></li>
+						<hr class="h-4 w-[.75px] bg-gray-500" />
+						<li><a href="">Vrijwillger worden</a></li>
+						<hr class="h-4 w-[.75px] bg-gray-500" />
+						<li><a href="">Contact</a></li>
+					</ul>
+				</nav>
+				<div class="flex items-center gap-4">
+					<a class="mt-1" href="/">
+						<svg
+							class="w-5 h-5"
+							viewBox="0 0 48 60"
+							enable-background="new 0 0 48 48"
+							xml:space="preserve"
+							><g
+								><path
+									d="M44.7070313,43.2929688L32.6885986,31.2745361C35.3609619,28.2703857,37,24.3276978,37,20c0-9.3740234-7.6259766-17-17-17   S3,10.6259766,3,20s7.6259766,17,17,17c4.3276978,0,8.2703857-1.6390381,11.2745361-4.3114014l12.0184326,12.0184326   C43.4882813,44.9023438,43.7441406,45,44,45s0.5117188-0.0976563,0.7070313-0.2929688   C45.0976563,44.3164063,45.0976563,43.6835938,44.7070313,43.2929688z M20,35c-8.2709961,0-15-6.7285156-15-15S11.7290039,5,20,5   c8.2714844,0,15,6.7285156,15,15S28.2714844,35,20,35z"
+								></path></g
+							><text
+								x="0"
+								y="63"
+								fill="#000000"
+								font-size="5px"
+								font-weight="bold"
+								font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
+								>Created by yanuar rizki</text
+							><text
+								x="0"
+								y="68"
+								fill="#000000"
+								font-size="5px"
+								font-weight="bold"
+								font-family="'Helvetica Neue', Helvetica, Arial-Unicode, Arial, Sans-serif"
+								>from the Noun Project</text
+							></svg
+						>
+					</a>
+					<ul class="flex gap-3">
+						<li><a href="">NL</a></li>
+						<li><a href="">FR</a></li>
+						<li><a href="">EN</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper flex items-center justify-between py-10">
+		<a href="/">
+			<img src="/svg/logo.svg" alt="logo" />
+		</a>
+		<nav class="flex items-center gap-12">
+			<ul class="flex gap-12 text-xl font-thin">
+				<li><a href="">Nederlands leren</a></li>
+				<li><a href="">Nederlands oefenen</a></li>
+				<li><a href="">Doe een taaltest</a></li>
+			</ul>
+			<Link type="primary" label="Afspraak maken" href="/detail" />
+		</nav>
+	</div>
+</header>

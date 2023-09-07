@@ -1,0 +1,11 @@
+---
+export interface Props {
+	label: string | undefined;
+}
+
+const { label } = Astro.props;
+---
+
+<button type="submit" class=`bg-white text-primary font-normal px-7 py-2 rounded-full text-lg`>
+	{label}
+</button>

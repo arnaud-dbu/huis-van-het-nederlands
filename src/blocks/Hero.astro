@@ -1,0 +1,22 @@
+---
+import Link from "../components/Link.astro";
+import H1 from "../components/H1.astro";
+---
+
+<section class="h-screen bg-tertiary shadow-sm">
+	<div class="h-full flex items-center justify-center gap-20 wrapper">
+		<div>
+			<div class="mb-10">
+				<H1 title="Leer Nederlands" />
+				<span class="text-6xl font-thin">en grijp nieuwe kansen</span>
+			</div>
+			<div class="flex gap-3">
+				<Link type="primary" href="/detail" label="Afspraak maken" />
+				<Link href="/detail" label="Nederlands oefenen" type="secondary" />
+			</div>
+		</div>
+		<div class="w-full max-w-[50rem] mt-32">
+			<img class="w-full h-full" src="/svg/group-talking.svg" alt="Illustration talking persons" />
+		</div>
+	</div>
+</section>

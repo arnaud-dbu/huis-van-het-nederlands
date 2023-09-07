@@ -1,0 +1,48 @@
+---
+import Link from "../components/Link.astro";
+import H2 from "../components/H2.astro";
+import P from "../components/P.astro";
+
+export interface Props {
+	imgPosition?: string;
+	title: string;
+	description: string;
+	img: string;
+	primaryLinkUrl?: string;
+	primaryLinkLabel?: string;
+	secondaryLinkUrl?: string;
+	secondaryLinkLabel?: string;
+}
+
+const {
+	imgPosition,
+	title,
+	description,
+	img,
+	primaryLinkUrl,
+	primaryLinkLabel,
+	secondaryLinkUrl,
+	secondaryLinkLabel,
+} = Astro.props;
+---
+
+<div class="">
+	<div class="wrapper flex gap-20 my-32 items-center">
+		<div
+			class=`speak-bubble ${imgPosition === "right" ? "relative left-8" : "relative right-8"}`
+			style=`background-image: url(${img});`>
+		</div>
+		<div class=`w-full flex flex-col gap-8 mb-10 ${imgPosition === "right" ? "-order-1" : ""}`>
+			<H2 title={title} />
+			<P description={description} />
+			<div class="flex gap-3">
+				{primaryLinkUrl && <Link href={primaryLinkUrl} label={primaryLinkLabel} type="primary" />}
+				{
+					secondaryLinkUrl && (
+						<Link href={secondaryLinkUrl} label={secondaryLinkLabel} type="secondary" />
+					)
+				}
+			</div>
+		</div>
+	</div>
+</div>

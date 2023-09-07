@@ -1,0 +1,81 @@
+---
+import Button from "../components/Button.astro";
+---
+
+<footer>
+	<div class="bg-primary text-white text-xl font-thin">
+		<div class="wrapper flex justify-between py-24">
+			<div class="flex items-start gap-8">
+				<img class="w-24" src="/svg/logo-white.svg" alt="logo" />
+				<div>
+					<span class="text-xl font-normal mb-3 block">Huis van het Nederlands</span>
+					<address style="font-style: normal;" class="text-xl mb-3">
+						Philippe de Champagnestraat 23<br />1000 Brussel
+					</address>
+					<div class="flex flex-col">
+						<a href="tel:02 501 66 60">+32 (0)2 313 96 00</a>
+						<a href="mailto:info@huisnederlandsbrussel">info@huisnederlandsbrussel.be</a>
+					</div>
+				</div>
+			</div>
+			<hr class="w-[.5px] h-44 bg-white opacity-50" />
+			<div>
+				<ul class="columns-2">
+					<li class="flex mb-2 items-center gap-2">
+						<a href="/">Aanbod voor</a>
+						<svg class="pt-1 w-3 h-3" viewBox="0 0 12.857 7.803"
+							><path
+								d="M6.327,16.279.6,10.557a.707.707,0,0,1,0-1l.667-.667a.707.707,0,0,1,1,0l4.556,4.535,4.556-4.535a.707.707,0,0,1,1,0l.667.667a.707.707,0,0,1,0,1L7.326,16.279A.707.707,0,0,1,6.327,16.279Z"
+								transform="translate(-0.398 -8.683)"
+								fill="#f7fbfa"
+								opacity="0.5"></path></svg
+						>
+					</li>
+					<li class="mb-2"><a href="/">Vormingen</a></li>
+					<li class="mb-2"><a href="/">Oefenkansen</a></li>
+					<li class="mb-2"><a href="/">Contact</a></li>
+					<li class="mb-2"><a href="/">Over ons</a></li>
+					<li class="mb-2"><a href="/">Zaal huren</a></li>
+					<li class="mb-2"><a href="/">Vacatures</a></li>
+					<li class="mb-2"><a href="/">Vrijwilliger worden</a></li>
+					<li class="mb-2"><a href="/">Publicaties bestellen</a></li>
+				</ul>
+			</div>
+			<hr class="w-[1px] h-44 bg-tertiary opacity-50" />
+			<div class="max-w-lg">
+				<span class="text-xl font-normal mb-3 bloc">Subscribe to our newsletter</span>
+				<span class="block text-lg mb-3">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+				</span>
+				<form action="">
+					<input
+						class="mb-1 bg-transparent border-[1px] text-lg py-1 px-5 rounded-lg w-full"
+						type="email"
+						placeholder="Email"
+					/>
+					<div class="flex items-center gap-3 mb-3">
+						<input type="checkbox" id="privacy" />
+						<label for="privacy" class="text-lg"
+							>Ik verklaar dat ik de privacy policy heb gelezen en goedgekeurd</label
+						>
+					</div>
+					<Button label="Inschrijven" />
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="wrapper text-xl py-3 flex justify-between">
+		<div class="flex items-center gap-3">
+			<span>Huis van het Nederlands - Built with</span>
+			<img src="/svg/heart.svg" alt="heart icon" />
+			<span>by Statik.be</span>
+		</div>
+		<div>
+			<ul class="flex gap-4 underline">
+				<li><a href="">Privacy Policy</a></li>
+				<li><a href="">Cookie Policy</a></li>
+				<li><a href="">Cookie setting</a></li>
+			</ul>
+		</div>
+	</div>
+</footer>
